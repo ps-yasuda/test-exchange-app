@@ -1,0 +1,15 @@
+type ExInfo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  TradeDate: AWSDate
+  TradeSts: Int
+}
+
+type MemInfo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  MemCode: String!
+  MemName: String
+  MemDiv: Int
+  StartDate: AWSDate
+  EndDate: AWSDate
+}
+ 
